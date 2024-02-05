@@ -2,22 +2,26 @@
   "schemaVersion": 1,
   "id": "internetscanner",
   "version": "${version}",
-
   "name": "InternetScanner",
   "description": "",
   "authors": [],
-  "contact": {},
-
+  "contact": {
+    "repo": "https://github.com/weibo/InternetScanner"
+  },
   "license": "Apache-2.0",
   "icon": "assets/internetscanner/icon.png",
-
   "environment": "server",
-  "entrypoints": {},
-
-
+  "entrypoints": {
+    "client": [
+      "fun.jsserver.internetscanner.client.InternetScannerClient"
+    ],
+    "main": [
+      "fun.jsserver.internetscanner.InternetScanner"
+    ]
+  },
   "depends": {
     "fabricloader": ">=${loader_version}",
-        "fabric": "*",
+    "fabric": "*",
     "minecraft": "${minecraft_version}"
   }
 }
