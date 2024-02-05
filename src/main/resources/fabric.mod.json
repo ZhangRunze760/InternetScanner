@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "internetscanner",
+  "version": "${version}",
+
+  "name": "InternetScanner",
+  "description": "",
+  "authors": [],
+  "contact": {},
+
+  "license": "Apache-2.0",
+  "icon": "assets/internetscanner/icon.png",
+
+  "environment": "server",
+  "entrypoints": {},
+
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+        "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
